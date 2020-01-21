@@ -14,6 +14,20 @@
     <h1>NextClever Blog</h1>
     <h2>With Git </h2>
     <a href="markdown.md">MarkDow Cheat Sheet</a>
+     <div id="premarked" style="display:none">
+   # Hello
+   **This is a marked window**
+   
+   `` code ``
+  </div>
+  <div id="content">
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script>
+    var mark=document.getElementById('premarked').innerHTML;
+    document.getElementById('content').innerHTML =marked(mark);
+  </script>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
